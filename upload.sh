@@ -13,7 +13,7 @@ fi
 
 filename=$(basename "$1")
 cp "$1" ".data/$filename"
-echo "[$filename](https://raw.github.com/ksheedlo/gitshare/master/.data/$filename)]" >>README.md
+echo "- [$filename](https://raw.github.com/ksheedlo/gitshare/master/.data/$filename)]" >>README.md
 git add ".data/$filename"
 git add README.md
 git ci -m "Upload $filename"
